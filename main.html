@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RanSite</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-weight: bolder;
+        }
+       
+        .site-text {
+            position: absolute;
+            top: 20px;
+            font-size: 24px;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-weight: bold;
+        }
+        /* Container to hold the buttons */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px; /* Space between buttons */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-weight: bold;
+        }
+
+        /* Style for the buttons */
+        .button-container button {
+            display: contents; /* Makes the button content behave as if it's not in a button */
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-weight: bold;
+        }
+
+        /* Style for the links inside the buttons */
+        .button-container a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 200px; /* Fixed width for uniformity */
+        }
+
+        /* Hover effect for the links */
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <!-- Button 1 -->
+        <button>
+            <a href="orbit.html">Orbit Simulation</a>
+        </button>
+
+        <!-- Button 2 -->
+        <button>
+            <a href="#">Page Not Found</a>
+        </button>
+
+        <!-- Button 3 -->
+        <button>
+            <a href="#">Page Not Found</a>
+        </button>
+
+        <!-- Button 4 -->
+        <button>
+            <a href="#">Page Not Found</a>
+        </button>
+    </div>
+    <div class="site-text">RanSite</div>
+</body>
+</html>

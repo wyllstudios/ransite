@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <!-- Redirect to another page after 5 seconds -->
+    <meta http-equiv="refresh" content="#; URL='./main.html'">
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-weight: bolder;
+        }
+
+        /* Loading screen container */
+        .loading-screen {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 200px;
+            gap: 20px;
+        }
+
+        /* Balls */
+        .ball {
+            width: 30px;
+            height: 30px;
+            background-color: #00ffcc;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+            animation: bounce 1.5s infinite ease-in-out;
+        }
+
+        /* Animation delays for each ball */
+        .ball:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .ball:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        /* Bounce animation */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-100px);
+            }
+        }
+
+        /* Loading text */
+        .loading-text {
+            position: absolute;
+            bottom: 20px;
+            font-size: 24px;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <div class="loading-text">Loading...</div>
+</body>
+</html>
